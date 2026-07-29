@@ -1,0 +1,8 @@
+{
+  "name": "Barbería Samos",
+  "description": "Página web oficial para barbería boutique con catálogo de cortes, sistema de reservas en línea, agenda de barberos y contacto.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
