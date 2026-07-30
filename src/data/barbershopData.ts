@@ -480,7 +480,7 @@ export const SHOP_INFO = {
     { day: 'Domingo', hours: 'Cerrado' }
   ],
   socials: {
-    facebook: '',
+    facebook: 'https://www.facebook.com/people/Barberia-jtsam/100037523064875/#',
     instagram: '',
     tiktok: ''
   },

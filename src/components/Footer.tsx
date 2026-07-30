@@ -1,5 +1,5 @@
 import React from 'react';
-import { Scissors, MapPin, Phone } from 'lucide-react';
+import { Scissors, MapPin, Phone, Facebook } from 'lucide-react';
 import { SHOP_INFO } from '../data/barbershopData';
 import { PageType } from './Navbar';
 import { SxmosLogo } from './SxmosLogo';
@@ -89,6 +89,19 @@ export const Footer: React.FC<FooterProps> = ({ onNavigatePage }) => {
                 <Phone className="w-4 h-4 text-amber-500 shrink-0" />
                 <span>{SHOP_INFO.phone}</span>
               </div>
+              {SHOP_INFO.socials.facebook && (
+                <div className="flex items-center gap-2 pt-1">
+                  <Facebook className="w-4 h-4 text-blue-400 shrink-0" />
+                  <a
+                    href={SHOP_INFO.socials.facebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-blue-400 transition-colors"
+                  >
+                    Facebook oficial
+                  </a>
+                </div>
+              )}
             </div>
           </div>
         </div>
