@@ -481,7 +481,7 @@ export const SHOP_INFO = {
   ],
   socials: {
     facebook: 'https://www.facebook.com/people/Barberia-jtsam/100037523064875/#',
-    instagram: '',
+    instagram: 'https://www.instagram.com/barber_shop_samos_1?utm_source=qr',
     tiktok: ''
   },
   amenities: [

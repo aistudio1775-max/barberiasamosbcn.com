@@ -1,5 +1,5 @@
 import React from 'react';
-import { Scissors, MapPin, Phone, Facebook } from 'lucide-react';
+import { Scissors, MapPin, Phone, Facebook, Instagram } from 'lucide-react';
 import { SHOP_INFO } from '../data/barbershopData';
 import { PageType } from './Navbar';
 import { SxmosLogo } from './SxmosLogo';
@@ -99,6 +99,19 @@ export const Footer: React.FC<FooterProps> = ({ onNavigatePage }) => {
                     className="hover:text-blue-400 transition-colors"
                   >
                     Facebook oficial
+                  </a>
+                </div>
+              )}
+              {SHOP_INFO.socials.instagram && (
+                <div className="flex items-center gap-2 pt-0.5">
+                  <Instagram className="w-4 h-4 text-pink-400 shrink-0" />
+                  <a
+                    href={SHOP_INFO.socials.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-pink-400 transition-colors"
+                  >
+                    Instagram (@barber_shop_samos_1)
                   </a>
                 </div>
               )}

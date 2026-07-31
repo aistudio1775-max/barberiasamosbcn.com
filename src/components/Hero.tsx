@@ -1,5 +1,5 @@
 import React from 'react';
-import { Scissors, Star, ShieldCheck, Sparkles, ChevronRight, Navigation } from 'lucide-react';
+import { Scissors, Star, ShieldCheck, Sparkles, ChevronRight, Navigation, Facebook, Instagram } from 'lucide-react';
 import { HERO_EXTERIOR_IMAGE, SHOP_INFO } from '../data/barbershopData';
 import { ShopStatusBadge } from './ShopStatusBadge';
 
@@ -35,6 +35,36 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenFaceGuide, onNa
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-stone-900/90 border border-amber-500/40 text-amber-400 text-xs font-semibold tracking-wide uppercase backdrop-blur-md shadow-xl">
               <Sparkles className="w-3.5 h-3.5 text-amber-400" />
               <span>Indústria 284, Sant Martí (Barcelona)</span>
+            </div>
+
+            {/* Social Media Links */}
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-stone-900/90 border border-stone-800 text-stone-300 text-xs backdrop-blur-md shadow-xl">
+              <span className="text-stone-400 text-[11px] font-medium">Síguenos:</span>
+              {SHOP_INFO.socials.facebook && (
+                <a
+                  href={SHOP_INFO.socials.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-400 transition-colors flex items-center gap-1 text-stone-300 font-medium"
+                  title="Facebook"
+                >
+                  <Facebook className="w-3.5 h-3.5 text-blue-400" />
+                  <span className="text-xs">Facebook</span>
+                </a>
+              )}
+              <span className="text-stone-700">|</span>
+              {SHOP_INFO.socials.instagram && (
+                <a
+                  href={SHOP_INFO.socials.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-pink-400 transition-colors flex items-center gap-1 text-stone-300 font-medium"
+                  title="Instagram"
+                >
+                  <Instagram className="w-3.5 h-3.5 text-pink-400" />
+                  <span className="text-xs">Instagram</span>
+                </a>
+              )}
             </div>
           </div>
 

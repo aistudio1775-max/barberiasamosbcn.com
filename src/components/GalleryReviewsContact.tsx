@@ -17,7 +17,8 @@ import {
   Navigation,
   Maximize2,
   Scissors,
-  Facebook
+  Facebook,
+  Instagram
 } from 'lucide-react';
 import { SHOP_INFO, FAQS, REVIEWS_DATA, SAMOS_PHOTOS, HERO_EXTERIOR_IMAGE, HERO_INTERIOR_IMAGE } from '../data/barbershopData';
 import { Review } from '../types';
@@ -325,6 +326,23 @@ export const GalleryReviewsContact: React.FC<GalleryReviewsContactProps> = ({ ac
                           className="font-semibold text-blue-400 hover:text-blue-300 hover:underline flex items-center gap-1"
                         >
                           Barbería Barberia-jtsam <ExternalLink className="w-3 h-3" />
+                        </a>
+                      </div>
+                    </div>
+                  )}
+
+                  {SHOP_INFO.socials.instagram && (
+                    <div className="flex items-center gap-3 text-stone-300">
+                      <Instagram className="w-5 h-5 text-pink-500 shrink-0" />
+                      <div>
+                        <span className="text-stone-400 text-xs block">Instagram oficial:</span>
+                        <a
+                          href={SHOP_INFO.socials.instagram}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="font-semibold text-pink-400 hover:text-pink-300 hover:underline flex items-center gap-1"
+                        >
+                          @barber_shop_samos_1 <ExternalLink className="w-3 h-3" />
                         </a>
                       </div>
                     </div>

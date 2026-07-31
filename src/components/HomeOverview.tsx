@@ -1,5 +1,5 @@
 import React from 'react';
-import { Scissors, Calendar, Camera, Star, MapPin, Clock, ArrowRight, Sparkles, Navigation, Phone } from 'lucide-react';
+import { Scissors, Calendar, Camera, Star, MapPin, Clock, ArrowRight, Sparkles, Navigation, Phone, Facebook, Instagram } from 'lucide-react';
 import { SHOP_INFO, SERVICES_DATA } from '../data/barbershopData';
 import { PageType } from './Navbar';
 import { ShopStatusBadge } from './ShopStatusBadge';
@@ -29,6 +29,32 @@ export const HomeOverview: React.FC<HomeOverviewProps> = ({
           <p className="text-stone-400 text-sm">
             Carrer de la Indústria 284, Sant Martí (Barcelona)
           </p>
+
+          {/* Social Links */}
+          <div className="flex items-center justify-center gap-3 pt-1 text-xs">
+            {SHOP_INFO.socials.facebook && (
+              <a
+                href={SHOP_INFO.socials.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-stone-900 border border-stone-800 text-stone-300 hover:border-blue-500/50 hover:text-blue-400 transition-all"
+              >
+                <Facebook className="w-3.5 h-3.5 text-blue-400" />
+                <span>Facebook</span>
+              </a>
+            )}
+            {SHOP_INFO.socials.instagram && (
+              <a
+                href={SHOP_INFO.socials.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-stone-900 border border-stone-800 text-stone-300 hover:border-pink-500/50 hover:text-pink-400 transition-all"
+              >
+                <Instagram className="w-3.5 h-3.5 text-pink-400" />
+                <span>Instagram</span>
+              </a>
+            )}
+          </div>
         </div>
 
         {/* Navigation Cards Grid */}
