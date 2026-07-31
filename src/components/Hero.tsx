@@ -46,10 +46,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenFaceGuide, onNa
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-blue-400 transition-colors flex items-center gap-1 text-stone-300 font-medium"
-                  title="Facebook"
+                  title="Abrir Facebook"
                 >
                   <Facebook className="w-3.5 h-3.5 text-blue-400" />
-                  <span className="text-xs">Facebook</span>
+                  <span className="text-xs">Abrir Facebook</span>
                 </a>
               )}
               <span className="text-stone-700">|</span>
@@ -59,10 +59,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onOpenFaceGuide, onNa
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-pink-400 transition-colors flex items-center gap-1 text-stone-300 font-medium"
-                  title="Instagram"
+                  title="Abrir Instagram"
                 >
                   <Instagram className="w-3.5 h-3.5 text-pink-400" />
-                  <span className="text-xs">Instagram</span>
+                  <span className="text-xs">Abrir Instagram</span>
                 </a>
               )}
             </div>

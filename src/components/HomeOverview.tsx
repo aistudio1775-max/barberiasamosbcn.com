@@ -40,7 +40,7 @@ export const HomeOverview: React.FC<HomeOverviewProps> = ({
                 className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-stone-900 border border-stone-800 text-stone-300 hover:border-blue-500/50 hover:text-blue-400 transition-all"
               >
                 <Facebook className="w-3.5 h-3.5 text-blue-400" />
-                <span>Facebook</span>
+                <span>Abrir Facebook</span>
               </a>
             )}
             {SHOP_INFO.socials.instagram && (
@@ -51,7 +51,7 @@ export const HomeOverview: React.FC<HomeOverviewProps> = ({
                 className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-stone-900 border border-stone-800 text-stone-300 hover:border-pink-500/50 hover:text-pink-400 transition-all"
               >
                 <Instagram className="w-3.5 h-3.5 text-pink-400" />
-                <span>Instagram</span>
+                <span>Abrir Instagram</span>
               </a>
             )}
           </div>

@@ -318,14 +318,14 @@ export const GalleryReviewsContact: React.FC<GalleryReviewsContactProps> = ({ ac
                     <div className="flex items-center gap-3 text-stone-300">
                       <Facebook className="w-5 h-5 text-blue-500 shrink-0" />
                       <div>
-                        <span className="text-stone-400 text-xs block">Página de Facebook:</span>
+                        <span className="text-stone-400 text-xs block">Facebook:</span>
                         <a
                           href={SHOP_INFO.socials.facebook}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="font-semibold text-blue-400 hover:text-blue-300 hover:underline flex items-center gap-1"
                         >
-                          Barbería Barberia-jtsam <ExternalLink className="w-3 h-3" />
+                          Abrir Facebook <ExternalLink className="w-3 h-3" />
                         </a>
                       </div>
                     </div>
@@ -335,14 +335,14 @@ export const GalleryReviewsContact: React.FC<GalleryReviewsContactProps> = ({ ac
                     <div className="flex items-center gap-3 text-stone-300">
                       <Instagram className="w-5 h-5 text-pink-500 shrink-0" />
                       <div>
-                        <span className="text-stone-400 text-xs block">Instagram oficial:</span>
+                        <span className="text-stone-400 text-xs block">Instagram:</span>
                         <a
                           href={SHOP_INFO.socials.instagram}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="font-semibold text-pink-400 hover:text-pink-300 hover:underline flex items-center gap-1"
                         >
-                          @barber_shop_samos_1 <ExternalLink className="w-3 h-3" />
+                          Abrir Instagram <ExternalLink className="w-3 h-3" />
                         </a>
                       </div>
                     </div>

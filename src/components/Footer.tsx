@@ -98,7 +98,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigatePage }) => {
                     rel="noopener noreferrer"
                     className="hover:text-blue-400 transition-colors"
                   >
-                    Facebook oficial
+                    Abrir Facebook
                   </a>
                 </div>
               )}
@@ -111,7 +111,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigatePage }) => {
                     rel="noopener noreferrer"
                     className="hover:text-pink-400 transition-colors"
                   >
-                    Instagram (@barber_shop_samos_1)
+                    Abrir Instagram
                   </a>
                 </div>
               )}
@@ -122,11 +122,6 @@ export const Footer: React.FC<FooterProps> = ({ onNavigatePage }) => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-stone-900 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-400 gap-4">
           <p>© {new Date().getFullYear()} {SHOP_INFO.name}. Todos los derechos reservados.</p>
-          <div className="flex items-center gap-6">
-            <span className="hover:text-stone-300 transition-colors cursor-pointer">Política de Privacidad</span>
-            <span className="hover:text-stone-300 transition-colors cursor-pointer">Términos de Servicio</span>
-            <span className="hover:text-stone-300 transition-colors cursor-pointer">Aviso Legal</span>
-          </div>
         </div>
       </div>
     </footer>
